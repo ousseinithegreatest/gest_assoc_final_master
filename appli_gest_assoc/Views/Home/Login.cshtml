@@ -60,23 +60,23 @@
 
 
             <div class="panel-body">
-                <form class="form-horizontal m-t-20" action="home.html">
+                <form class="form-horizontal m-t-20" asp-action="Verify" method="post">
 
                     <div class="form-group ">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg " type="text" required="" placeholder="Téléphone ou Email">
+                            <input class="form-control input-lg " name="Email"  type="email" required placeholder="Email">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg" type="password" required="" placeholder="Mot de passe">
+                            <input class="form-control input-lg" type="password"  name="Password" required placeholder="Mot de passe">
                         </div>
                     </div>
 
                     <div class="form-group text-center m-t-40">
                         <div class="col-xs-12">
-                            <button asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg w-lg waves-effect waves-light" type="submit">Se connecter</button>
+                            <button class="btn btn-primary btn-lg w-lg waves-effect waves-light" type="submit">Se connecter</button>
                         </div>
                     </div>
                 </form>

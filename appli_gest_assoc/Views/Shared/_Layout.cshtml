@@ -84,20 +84,17 @@
         <div class="left side-menu">
             <div class="sidebar-inner slimscrollleft">
                 <div class="user-details">
-                    <div class="pull-left">
+            @*        <div class="pull-left">
                         <img src="~/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
-                    </div>
+                    </div>*@
                     <div class="user-info">
                         <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">John Doe <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Administrateur <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="profile.html"><i class="md md-face-unlock"></i> Profil<div class="ripple-wrapper"></div></a></li>
-                                <li><a href="profile.html"><i class="md md-settings"></i>Paramètres</a></li>
-                                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Déconnexion</a></li>
+                                <li><a asp-controller="Home" asp-action="Login"><i class="md md-settings-power"></i> Déconnexion</a></li>
                             </ul>
                         </div>
 
-                        <p class="text-muted m-0">Administrateur</p>
                     </div>
                 </div>
                 <!--- Divider -->
@@ -108,7 +105,7 @@
                         </li>
 
                         <li class="has_sub">
-                            <a href="#" class="waves-effect"><i class=" md-store"></i><span> Associations </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <a href="#" class="waves-effect"><i class="md-store"></i><span> Associations </span><span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a asp-controller="Associations" asp-action="Create">Ajouter une association</a></li>
                                 <li><a asp-controller="Associations" asp-action="Index">Liste des associations</a></li>
@@ -133,21 +130,21 @@
                         </li>
 
                         <li class="has_sub">
-                            <a href="#" class="waves-effect"><i class="md-account-multiple"></i> <span> Bureau </span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                            <a href="#" class="waves-effect"><i class="md-group-work"></i> <span> Bureau </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a asp-controller="Bureaux" asp-action="Create">Ajouter un bureau</a></li>
                                 <li><a asp-controller="Bureaux" asp-action="Index">Liste des bureaux</a></li>
                             </ul>
                         </li>
                         <li class="has_sub">
-                            <a href="#" class="waves-effect"><i class="md-account-multiple"></i> <span> Membre Bureau </span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                            <a href="#" class="waves-effect"><i class="md-tag-faces"></i> <span> Membre Bureau </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a asp-controller="MembreBureaux" asp-action="Create">Ajouter un bureau</a></li>
                                 <li><a asp-controller="MembreBureaux" asp-action="Index">Liste des bureaux</a></li>
                             </ul>
                         </li>
                         <li class="has_sub">
-                            <a href="#" class="waves-effect"><i class="md-account-multiple"></i> <span> Dépense </span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                            <a href="#" class="waves-effect"><i class="md-attach-money"></i> <span> Dépense </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a asp-controller="Depenses" asp-action="Create">Ajouter une dépense</a></li>
                                 <li><a asp-controller="Depenses" asp-action="Index">Liste des dépenses</a></li>
@@ -156,7 +153,7 @@
                             </ul>
                         </li>
                         <li class="has_sub">
-                            <a href="#" class="waves-effect"><i class="md-account-multiple"></i> <span> Recette </span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                            <a href="#" class="waves-effect"><i class="md-trending-up"></i> <span> Recette </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a asp-controller="Recettes" asp-action="Create">Ajouter une recette</a></li>
                                 <li><a asp-controller="Recettes" asp-action="Index">Liste des recettes</a></li>
